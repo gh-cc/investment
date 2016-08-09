@@ -3,62 +3,31 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
-<head>
-<%@ include file="common.jsp" %>
-
-<link href="${projectName }/resources/mb/css/base.css" rel="stylesheet">
-<link href="${projectName }/resources/mb/css/index.css" rel="stylesheet">
-<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
-<script type="text/javascript" src="${projectName }/resources/mb/js/sliders.js"></script>
-
 <style type="text/css">
 .nav_index {
-    padding: 0px 0px;
-    font-size: 20px;
+    padding: 10px 10px;
+    font-size: 8px;
+    height: 60px;
 }
-.nav>li>a{
-    padding: 10px 30px;
+.ul_{
+	float: right;
 }
 </style>
 
-<script type="text/javascript">
-$(function(){
-//	alert("gh");
-
-	$("li[role='presentation'] > a").on("click",function(){
-		//alert($(this).text());
-		
-		$("li[role='presentation']").each(function(){
-			$(this).removeClass("active");
-		});
-		
-		$(this).parent().addClass("active");
-		
-	});
-	
-});
-
-</script>
-
-</head>
-
 <body>
-<header>
-  <div class="logo f_l"> 
-  	<a href="/">
-  	  <img src="${projectName }/resources/mb/images/logo2.jpg"></a> 
-  </div>
-  <div class="pull-right">
-  <ul class="nav nav-pills nav_index">
-	  <li role="presentation" <%-- class="active" --%> ><a id="index" href="${projectName }/gh/index.action">首页</a></li>
-	  <li role="presentation"><a id="me" href="${projectName }/gh/me.action" >1111</a></li>
-	  <li role="presentation"><a id="wz" href="#">222</a></li>
-	  <li role="presentation"><a id="ly" href="#">333</a></li>
+<%@ include file="/WEB-INF/pages/common/common.jsp" %>
+
+<div class="nav_index">
+	<ul class="nav nav-pills  ul_">
+	  <li role="presentation" id="1"><a href="${projectName }/index.jsp">首页</a></li>
+	  <li role="presentation" id="2"><a href="${projectName }/invest.action">投资机构</a></li>
+	  <li role="presentation" id="3"><a href="${projectName }/entrepreneurship.action">创业公司</a></li>
+	  <li role="presentation" id="4"><a href="${projectName }/entrepreneur.action">创业者</a></li>
+	  <li role="presentation" id="5"><a href="${projectName }/investor.action">投资人</a></li>
 	</ul>
-  </div>
-</header>
+</div>
+
 </body>
-  
 </html>
   
   

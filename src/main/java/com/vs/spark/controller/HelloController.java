@@ -17,9 +17,23 @@ public class HelloController {
 	@Resource
 	public PersionService persionService;
 	
-	@RequestMapping("/index.action")
-	public String index(@PathVariable String path,Model model){
-		System.out.println(path);
-		return "index.jsp";
+	@RequestMapping("/invest.action")
+	public String invest(Model model){
+		return "invest.jsp";
+	}
+	
+	@RequestMapping("/investor.action")
+	public String investor(Model model){
+		return "investor.jsp";
+	}
+	
+	@RequestMapping("/entrepreneur.action")
+	public String entrepreneur(Model model){
+		return "entrepreneur.jsp";
+	}
+	
+	@RequestMapping("/entrepreneurship.action")
+	public String entrepreneurship(Model model){
+		return "Entrepreneurship.jsp";
 	}
 }
