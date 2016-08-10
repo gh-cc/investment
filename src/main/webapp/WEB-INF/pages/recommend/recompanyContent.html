@@ -1,0 +1,13 @@
+
+<table>
+    <tr>
+        <th>投资机构名称</th>
+        <th>推荐等级(值越小越高)</th>
+    </tr>
+    <c:forEach items="${agencyList}" var="a" varStatus="status">
+        <tr>
+            <td>${a.agencyName}</td>
+            <td>${status.index}</td>
+        </tr>
+    </c:forEach>
+</table>
