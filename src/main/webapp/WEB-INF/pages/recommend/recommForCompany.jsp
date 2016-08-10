@@ -13,18 +13,21 @@
   $(function(){
     //	alert("gh");
     $('#company_reomm').click(
-    var company_name = $('#companyname').val();
-    company_name =  $.trim(company_name);
-    if(company_name == null || company_name == ""){
-      alert("请先输入需要推荐的融资公司名称，再继续操作！");
-      return;
-    }else {
-      $.post("/recomForCompResult.action", {company_name: company_name},
-              function (data) {
-                $('.recomm_class').html(data);
-              },
-              "html");
+    function(){
+         var company_name = $('#companyname').val();
+            company_name =  $.trim(company_name);
+            if(company_name == null || company_name == ""){
+              alert("请先输入需要推荐的融资公司名称，再继续操作！");
+              return;
+            }else {
+              $.post("/recomForCompResult.action", {company_name: company_name},
+                      function (data) {
+                        $('.recomm_class').html(data);
+                      },
+                      "html");
+            }
     }
+
     );
 
   });

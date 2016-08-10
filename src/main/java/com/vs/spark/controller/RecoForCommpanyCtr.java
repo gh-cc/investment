@@ -4,7 +4,6 @@ import com.vs.spark.service.RecoForCommpanyService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -23,9 +22,10 @@ public class RecoForCommpanyCtr {
     }
 
     @RequestMapping("/recomForCompResult.action")
-    public String recomForCompResult(Model model){
-        String companyName = null;
-        List agencyList = recoForCommpanyService.findRecomResult(companyName);
+    public String recomForCompResult(Model model,String company_name,HttpServletRequest request){
+        List agencyList = recoForCommpanyService.findRecomResult(company_name);
+        request.setAttribute("agencyList".agencyList);
+
         return "recommend/recompanyContent.html";
     }
 
