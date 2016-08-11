@@ -1,15 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>ggh</groupId>
-  <artifactId>investment</artifactId>
-  <version>1.0.1</version>
-  <packaging>war</packaging>
-  
-   <properties> 
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ggh</groupId>
+	<artifactId>investment</artifactId>
+	<version>1.0.1</version>
+	<packaging>war</packaging>
+
+	<properties>
 		<org.springframework.version>3.2.2.RELEASE</org.springframework.version>
-  </properties>
-	  
-  <dependencies>
+	</properties>
+
+	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
@@ -29,8 +29,8 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
 			<version>${org.springframework.version}</version>
-		</dependency>  
-		<dependency> 
+		</dependency>
+		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
 			<version>1.7.4</version>
@@ -117,18 +117,18 @@
 			<artifactId>geronimo-servlet_3.0_spec</artifactId>
 			<version>1.0</version>
 		</dependency> -->
-		
+
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>1.9.13</version>
 		</dependency>
-		<dependency>  
-    		<groupId>net.sf.json-lib</groupId>  
-    		<artifactId>json-lib</artifactId>  
-    		<classifier>jdk15</classifier>  
-    		<version>2.3</version>  
-		</dependency> 
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<classifier>jdk15</classifier>
+			<version>2.3</version>
+		</dependency>
 		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
@@ -136,7 +136,7 @@
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.cloudhopper.proxool</groupId>
 			<artifactId>proxool</artifactId>
@@ -156,7 +156,19 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
-  </dependencies>
-  
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.el/javax.el-api -->
+		<dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>javax.el-api</artifactId>
+			<version>2.2.5</version>
+		</dependency>
+
+	</dependencies>
+
 </project>
