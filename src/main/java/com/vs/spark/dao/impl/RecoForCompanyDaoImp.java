@@ -1,17 +1,21 @@
 package com.vs.spark.dao.impl;
 
 import com.vs.spark.dao.RecoForCompanyDao;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.type.StandardBasicTypes;
+import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
+
 import java.util.List;
 
 /**
  * Created by lenovo on 2016/8/10.
  */
+@Repository
 public class RecoForCompanyDaoImp implements RecoForCompanyDao {
     @Resource
     public SessionFactory sessionFactory;
