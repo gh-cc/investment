@@ -19,10 +19,16 @@ public class SqlServiceImpl implements SqlService{
 	public BaseDao baseDao;
 
 	@Override
-	public List find(String sql) {
+	public List<Object[]> sql(String sql) {
 		return baseDao.sqlQuery(sql);
 	}
 	
+	public List<Object> sql2(String sql) {
+		return baseDao.sqlQuery2(sql);
+	}
 	
+	public List<Object> find(String sql){
+		return baseDao.find(sql);
+	}
 
 }

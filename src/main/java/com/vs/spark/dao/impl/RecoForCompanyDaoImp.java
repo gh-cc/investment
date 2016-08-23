@@ -22,13 +22,13 @@ public class RecoForCompanyDaoImp implements RecoForCompanyDao {
     //
     public List findRecomResult(String companyName){
         Session session = sessionFactory.getCurrentSession();
-        Transaction tx = session.beginTransaction();
+//        Transaction tx = session.beginTransaction();
         String sql = "select a.id,a.agency_name,c.score from fund_inf a, recommresult c where " +
                 "(select b.id from company b where b.name= '"+companyName
                 +"') = c.company_id and c.agency_id=a.id order by c.score desc";
         List list = session.createSQLQuery(sql).
                 addScalar("agency_name", StandardBasicTypes.STRING).list();
-        tx.commit();
+//        tx.commit();
         return  list;
     }
 }

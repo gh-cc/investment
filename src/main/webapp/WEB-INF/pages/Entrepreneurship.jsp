@@ -9,6 +9,9 @@
 </head>
 <body>
 	<%@ include file="/WEB-INF/pages/common/head.jsp" %>
+	
+	
+	
 	<script type="text/javascript">
 	$(function(){
 	//	alert("gh");
@@ -22,8 +25,12 @@
 	
 	</script>
 	
-    
-     <div id="rztp" style="width: 100%;height:700px;"></div>
+	
+	&nbsp;<a href="${projectName }/reqrecomForComp.action"><font size="6">Recommended investment institutions</font></a>
+	<br/>
+	<br/>
+	
+    <div id="rztp" style="width: 100%;height:700px;"></div>
     <script type="text/javascript">
         var rztp = echarts.init(document.getElementById('rztp'));
         rztp.showLoading();
@@ -31,7 +38,7 @@
         	rztp.hideLoading();
         	rztp.setOption(option = {
                 title: {
-                    text: '融资TOP5'
+                    text: 'Venture capital times TOP5'
                 },
                 animationDurationUpdate: 1500,
                 animationEasingUpdate: 'quinticInOut',

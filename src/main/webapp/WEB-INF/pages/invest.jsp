@@ -22,13 +22,17 @@
 		});
 		
 		</script>
+		
+	&nbsp;<a href="#"><font size="6">Recommended startups(In development...)</font></a>
+	<br/>
+	<br/>
 
 	<div id="turn" style="width: 100%;height:300px;"></div>
 	<script type="text/javascript">
         var myChart = echarts.init(document.getElementById('turn'));
 		var tzx = ['A+轮','战略投资','IPO上市','天使轮','新三板','F轮-上市前','B轮','D轮','IPO上市后','Pre-B轮','E轮','Pre-A轮','C轮','B+轮','A轮','种子轮','不明确'];
         var tzy = [105,144,88,5774,123,50,1313,122,77,9,41,668,420,29,4665,325,61];
-        myChart.setOption(getBarOption(tzx,tzy,'所投轮次分析','投资次数'));
+        myChart.setOption(getBarOption(tzx,tzy,'The investment round analysis of investment institutions','Investment times'));
     </script>
 	
 	
@@ -40,7 +44,7 @@
         var lei = echarts.init(document.getElementById('leixin'));
      	var leix = ['本地生活','医疗健康','硬件','物流','文化娱乐','移动互联网','金融','电子商务','房产服务','广告营销','游戏','汽车交通','社交网络','工具软件','旅游','教育','体育运动','企业服务'];
         var leiy = [1167,788,814,159,1291,4,1154,1792,390,427,1049,739,588,509,548,820,232,1542];
-        lei.setOption(getBarOption(leix,leiy,'所投公司种类分析','投资次数'));
+        lei.setOption(getBarOption(leix,leiy,'Types of investment companies','Investment times'));
     </script> 
     
     
@@ -54,7 +58,7 @@
         	tztp.hideLoading();
         	tztp.setOption(option = {
                 title: {
-                    text: '投资机构投资项目数TOP5'
+                    text: 'Investment institutions to invest in the number of projects TOP5'
                 },
                 animationDurationUpdate: 1500,
                 animationEasingUpdate: 'quinticInOut',

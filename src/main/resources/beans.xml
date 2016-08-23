@@ -23,13 +23,13 @@
 			<value>com.mysql.jdbc.Driver</value>
 		</property>
 		<property name="jdbcUrl">
-			<value>jdbc:mysql://172.16.0.34:3306/tz</value>
+			<value>jdbc:mysql://127.0.0.1:3306/investmentdb</value>
 		</property>
 		<property name="user">
 			<value>root</value>
 		</property>
 		<property name="password">
-			<value>hna@1234</value>
+			<value>root</value>
 		</property>
 		<property name="maxPoolSize">
 			<value>30</value>

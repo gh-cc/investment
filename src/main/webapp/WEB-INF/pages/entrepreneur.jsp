@@ -30,7 +30,7 @@
         cyz_city.showLoading();
         $.getJSON('${projectName }/resources/json/cyz-city.json', function (json) {
         	cyz_city.hideLoading();
-	        cyz_city.setOption(getMap(json.data,"地域分布","创业者"));
+	        cyz_city.setOption(getMap(json.data,"Regional distribution of entrepreneurs","Number"));
         })
         
     </script> 
@@ -42,7 +42,7 @@
         var cyz_gs = echarts.init(document.getElementById('cyz_gs'));
      	var gs_data = ['添米','星火钱包','哎呀iYao','乐钱','拿趣网','梅第奇皇后鲜果泡芙','Counect互帮国际','Feekr旅行分享汇','序时科技'];
         var cyz_num = [6,6,6,6,6,6,6,5,5];
-        cyz_gs.setOption(getBarOption(gs_data,cyz_num,'来自该公司创业者人数TOP10','创业者人数'));
+        cyz_gs.setOption(getBarOption(gs_data,cyz_num,'The number of entrepreneurs TOP5 company','Number'));
     </script> 
     
 	

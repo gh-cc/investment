@@ -19,11 +19,11 @@
 
 <div class="nav_index">
 	<ul class="nav nav-pills  ul_">
-	  <li role="presentation" id="1"><a href="${projectName }/index.jsp">首页</a></li>
-	  <li role="presentation" id="2"><a href="${projectName }/invest.action">投资机构</a></li>
-	  <li role="presentation" id="3"><a href="${projectName }/entrepreneurship.action">创业公司</a></li>
-	  <li role="presentation" id="4"><a href="${projectName }/entrepreneur.action">创业者</a></li>
-	  <li role="presentation" id="5"><a href="${projectName }/investor.action">投资人</a></li>
+	  <%-- <li role="presentation" id="1"><a href="${projectName }/index.jsp">首页</a></li> --%>
+	  <li role="presentation" id="2"><a href="${projectName }/invest.action">Institutional Investor</a></li>
+	  <li role="presentation" id="3"><a href="${projectName }/entrepreneurship.action">Startups</a></li>
+	  <li role="presentation" id="4"><a href="${projectName }/entrepreneur.action">Entrepreneurs</a></li>
+	  <li role="presentation" id="5"><a href="${projectName }/investor.action">Investor</a></li>
 	</ul>
 </div>
 
